@@ -5,7 +5,7 @@ const PublicResolver = artifacts.require('@ensdomains/ens/PublicResolver.sol');
 const ReverseRegistrar = artifacts.require('@ensdomains/ens/ReverseRegistrar.sol');
 const namehash = require('eth-ens-namehash');
 const tld = "eth";
-const owner = "0x20b3c96eb06663ed0dc3d10747707d16bce358de";
+const owner = web3.eth.accounts[0]
 
 module.exports = function(deployer) {
   deployer.deploy(ConvertLib);
