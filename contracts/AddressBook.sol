@@ -24,9 +24,14 @@ contract AddressBook {
     }
 
     //search for all domians and addresses of a certain type
-    function getType(string _type) returns (string, string, string,  address){
+    function searchByType(string _type) returns (string, string, string,  address){
+        domainName[] ofType;
+        address[] addrOfType;
         for(uint i = 0; i < allAddresses.length; i++) {
-
+            if (compareStrings(allDomains[allAddresses[i]].domainType, _type)){
+                ofType.push(allDomains[allAddresses[i]]);
+                addrOfType.push(allAddresses[i]);
+            }
         }
     }
 
@@ -34,5 +39,8 @@ contract AddressBook {
         return(allDomains[_addr].uniqueId, allDomains[_addr].domainType, ".eth");
     }
 
+    function compareStrings (string a, string b) view returns (bool){
+       return keccak256(a) == keccak256(b);
+   }
 
 }
