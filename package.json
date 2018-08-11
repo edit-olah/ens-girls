@@ -1,0 +1,32 @@
+{
+  "name": "ens-girls",
+  "version": "1.0.0",
+  "description": "ENS Hackathon 2018 London - project",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edit-olah/ens-girls.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edit-olah/ens-girls/issues"
+  },
+  "homepage": "https://github.com/edit-olah/ens-girls#readme",
+  "dependencies": {
+    "ethereum-ens": "^0.7.4",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@ensdomains/ens": "^0.1.1",
+    "eth-ens-namehash": "^2.0.8"
+  }
+}
