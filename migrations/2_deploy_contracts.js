@@ -1,5 +1,4 @@
-var ConvertLib = artifacts.require('./ConvertLib.sol');
-var MetaCoin = artifacts.require('./MetaCoin.sol');
+const AddressBook = artifacts.require('./AddressBook.sol');
 const ENS = artifacts.require('@ensdomains/ens/ENSRegistry.sol');
 const PublicResolver = artifacts.require('@ensdomains/ens/PublicResolver.sol');
 const ReverseRegistrar = artifacts.require('@ensdomains/ens/ReverseRegistrar.sol');
@@ -8,9 +7,7 @@ const tld = "eth";
 const owner = web3.eth.accounts[0]
 
 module.exports = function(deployer) {
-  deployer.deploy(ConvertLib);
-  deployer.link(ConvertLib, MetaCoin);
-  deployer.deploy(MetaCoin);
+  deployer.deploy(AddressBook);
   deployer.then(() => {
     return deployer
       .deploy(ENS)
