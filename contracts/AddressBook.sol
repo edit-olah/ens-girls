@@ -20,19 +20,25 @@ contract AddressBook {
 
 
     //register address as a domain
-    function registerName(address _newAddress, string dName, string _despriction, string __type)  public {
+    function registerName(address _newAddress, string dName, string _despriction, string __type)  returns (uint256) {
 
         if(compareStrings(__type, "User")){
              userBook.push(domainName(_newAddress, dName, __type,_despriction ));
+             return userBook.length;
          } else if(compareStrings(__type, "Exchange")){
              exchangeBook.push(domainName(_newAddress, dName, __type,_despriction ));
+             return exchangeBook.length;
          }else if(compareStrings(__type, "Miner")){
              minerBook.push(domainName(_newAddress, dName, __type,_despriction ));
+             return minerBook.length;
          }else if(compareStrings(__type, "Token")){
              tokenBook.push(domainName(_newAddress, dName, __type,_despriction ));
+             return tokenBook.length;
          } else if(compareStrings(__type, "Dapp")){
              dappBook.push(domainName(_newAddress, dName, __type,_despriction ));
+             return dappBook.length;
         } else {
+            return 0;
 
         }
 
@@ -54,7 +60,6 @@ contract AddressBook {
         } else {
 
         }
-
     }
 
 
