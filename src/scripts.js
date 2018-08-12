@@ -115,7 +115,7 @@ var search =
         "Huobi"
     ],
     "DApp": [
-        "Blockparty",
+        "BlockParty",
         "Dapp24",
         "DAO"
     ],
@@ -132,6 +132,17 @@ var search =
         "Vitalik",
         "Satoshi"
     ]
+}
+
+var details = 
+{
+  "BlockParty": [
+    "Have you ever encountered free party or meetup and realised that half the people registered did not actually turn up? BlockParty solves this problem by providing a simple incentive for people to register only if they mean it.",
+    "Makoto Inoue",
+    "@makoto_inoue",
+    "0x144db63041008faee3dde3623a54cc824f5bdd60",
+    "https://etherscan.io/address/0x144db63041008faee3dde3623a54cc824f5bdd60"
+  ]
 }
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
