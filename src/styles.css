@@ -1,19 +1,80 @@
 /* layout styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .body-wrapper {
-    width: 800px;
-    display: block;
-    margin: 20px auto;
+  width: 485px;
+  display: block;
+  margin: 80px auto;
 }
 
 .search-bar {
     display: inline-block;
 }
 
+.logo-wrapper {
+  display: block;
+  width: 385px;
+  padding-bottom: 20px;
+  margin:0 auto;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #4597f2;
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+}
+
+h1 span {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.dataoutput-wrapper {
+  color: #525252;
+  background-color: #f2f4fd;
+  padding: 20px 10px;
+}
+
+.dataoutput-item {
+  padding-bottom: 10px;
+}
+
+.dataoutput-label {
+  color: #4597f2;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.dataoutput-value {
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
 /*
 * Dropdown
 * https://www.w3schools.com/howto/howto_js_filter_dropdown.asp
 */
+
+.dropdown__selectbox {
+  height: 42px;
+  border: 1px solid #ecebeb;
+  font-size: 15px;
+  width: 100px;
+  color: #6f6b68;
+}
 
 
 /* Dropdown Button */
@@ -33,14 +94,13 @@
 
 /* The search field */
 #myInput {
-  border-box: box-sizing;
+  box-sizing: border-box;
   background-image: url('searchicon.png');
   background-position: 14px 12px;
   background-repeat: no-repeat;
   font-size: 16px;
-  padding: 14px 20px 12px 45px;
-  border: none;
-  border-bottom: 1px solid #ddd;
+  padding: 11px 20px 11px 25px;
+  border: 1px solid #ecebeb;
 }
 
 /* The search field when it gets focus/clicked on */
@@ -84,9 +144,7 @@
 */
 
 * { box-sizing: border-box; }
-body {
-  font: 16px Arial; 
-}
+
 .autocomplete {
   /*the container must be positioned relative:*/
   position: relative;
