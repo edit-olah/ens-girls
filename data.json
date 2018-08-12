@@ -1,0 +1,34 @@
+{
+    "Miner": [
+        "EthPool",
+        "Ethermine",
+        "Sparkpool",
+        "MiningPoolHub",
+        "F2Pool",
+        "NanoPool"
+    ],
+    "Exchange": [
+        "Coinbase",
+        "Binance",
+        "Ethfinex",
+        "Huobi"
+    ],
+    "DApp": [
+        "Blockparty",
+        "Dapp24",
+        "DAO"
+    ],
+    "Token": [
+        "OMG",
+        "BNB",
+        "TRX",
+        "VET",
+        "ZRX"
+    ],
+    "User": [
+        "Makoto",
+        "NickJ",
+        "Vitalik",
+        "Satoshi"
+    ]
+}
