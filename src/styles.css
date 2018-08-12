@@ -5,7 +5,7 @@ body {
 
 
 .body-wrapper {
-  width: 485px;
+  width: 490px;
   display: block;
   margin: 80px auto;
 }
@@ -45,6 +45,14 @@ h1 span {
   color: #525252;
   background-color: #f2f4fd;
   padding: 20px 10px;
+  display: none;
+}
+
+.dataoutput-wrapper--show {
+  color: #525252;
+  background-color: #f2f4fd;
+  padding: 20px 10px;
+  display: block;
 }
 
 .dataoutput-item {
@@ -160,9 +168,11 @@ input[type=text] {
   background-color: #f1f1f1;
   width: 100%;
 }
-input[type=submit] {
+button {
   background-color: DodgerBlue;
   color: #fff;
+  padding: 12px;
+  font-size: 16px;
 }
 .autocomplete-items {
   position: absolute;

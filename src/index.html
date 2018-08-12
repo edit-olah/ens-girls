@@ -27,28 +27,29 @@
             </select>
         </div>
 
-        <form class="search-bar" autocomplete="off" action="/action_page.php">
+        <form id="searchForm" class="search-bar" autocomplete="off">
             <div class="autocomplete" style="width:300px;">
-                <input id="myInput" type="text" name="myCountry" placeholder="ENS name">
+                <input id="myInput" type="text" name="ENS" placeholder="ENS name">
             </div>
-            <input type="submit">
+            <button type="button" onClick="submitSearch()">Search</button>
         </form>
-        <div class="dataoutput-wrapper">
+
+        <div class="dataoutput-wrapper" id="dataoutputWrapper">
             <div class="dataoutput-item">
-                <p class="dataoutput-label">Company name:</p>
-                <p class="dataoutput-value">Company 1</p>
+                <p class="dataoutput-label">ENS name:</p>
+                <p class="dataoutput-value">BlockParty</p>
             </div>
             <div class="dataoutput-item">
-                <p class="dataoutput-label">Detail name:</p>
-                <p class="dataoutput-value">Detail 1</p>
+                <p class="dataoutput-label">Address:</p>
+                <p class="dataoutput-value"><a target="_blank" href="https://etherscan.io/address/0x144db63041008faee3dde3623a54cc824f5bdd60">0x144db63041008faee3dde3623a54cc824f5bdd60</a></p>
             </div>
             <div class="dataoutput-item">
-                <p class="dataoutput-label">Detail2 name:</p>
-                <p class="dataoutput-value">Detail 2</p>
+                <p class="dataoutput-label">Owner:</p>
+                <p class="dataoutput-value">Makoto Inoue</p>
             </div>
             <div class="dataoutput-item">
-                <p class="dataoutput-label">Detail3 name:</p>
-                <p class="dataoutput-value">Detail 3</p>
+                <p class="dataoutput-label">Twitter:</p>
+                <p class="dataoutput-value">@makoto_inoue</p>
             </div>
         </div>
     </div>

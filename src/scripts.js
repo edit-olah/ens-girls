@@ -150,3 +150,7 @@ var changeCategory = function(value){
     var currentData = search[value];
     autocomplete(document.getElementById("myInput"), currentData);
 };
+
+var submitSearch = function() {
+  document.getElementById("dataoutputWrapper").className = "dataoutput-wrapper--show";
+};
